@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multibanco</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="menuUser container">
+        <h1 class="tituloDados">Por favor introduza os seus dados!</h1>
+        <p class="nomeTexto">Nome completo</p>
+        <input type="text" class='nomeInput' id="nomeCompleto">
+        <p class="nifTexto">Numero Identificação Fiscal</p>
+        <input type="number" class='nifInput' id="nif">
+        <br>
+        <button class="btnCriarConta" id="criarConta">Criar Conta</button>
+    </div>
+    <div class="menus">
+        <div class="container">
+            <div class="multibanco displayNone" id="multibanco">
+                <div class="opcoes" id="opcoes">
+                    <div class="opcao" id="opcaoUm">
+                        <div class="opcoesInfo">
+                            <p class="numeroOpcao">1</p>
+                            <p class="descricaoOpcao" id="DescricaoOpcaoUm">Levantamentos</p>
+                        </div>
+                    </div>
+                    <div class="opcao" id="opcaoTres">
+                        <div class="opcoesInfo">
+                            <p class="numeroOpcao">3</p>
+                            <p class="descricaoOpcao" id="DescricaoOpcaoTres">MBWay</p>
+                        </div>
+                    </div>
+                    <div class="opcao" id="opcaoQuatro">
+                        <div class="opcoesInfo">
+                            <p class="numeroOpcao">4</p>
+                            <p class="descricaoOpcao" id="DescricaoOpcaoQuatro">Consultas</p>
+                        </div>
+                    </div>
+                    <div class="opcao" id="opcaoSeis">
+                        <div class="opcoesInfo">
+                            <p class="numeroOpcao">6</p>
+                            <p class="descricaoOpcao" id="DescricaoOpcaoSeis">Descontos MB</p>
+                        </div>
+                    </div>
+                    <div class="opcao" id="opcaoSete">
+                        <div class="opcoesInfo">
+                            <p class="numeroOpcao">7</p>
+                            <p class="descricaoOpcao" id="DescricaoOpcaoSete">Transferencias</p>
+                        </div>
+                    </div>
+                    <div class="opcao" id="opcaoNove">
+                        <div class="opcoesInfo">
+                            <p class="numeroOpcao">9</p>
+                            <p class="descricaoOpcao" id="DescricaoOpcaoNove">Vouchers</p>
+                        </div>
+                    </div>
+                    <div class="opcao" id="opcaoZeroZero">
+                        <div class="opcoesInfo">
+                            <p class="numeroOpcao">00</p>
+                            <p class="descricaoOpcao" id="DescricaoOpcaoZeroZero">Depósitos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Colocar HR entre os dados -->
+        <div class="container">
+            <div class="dadosUser displayNone">
+                <p>Cliente Nº</p>
+                <p id="clienteNumero"></p>
+                <p>Nome Completo</p>
+                <p id="clienteNome"></p>
+                <p>NIF</p>
+                <p id="clienteNif"></p>
+                <p>Balcão Nº</p>
+                <p id="balcaoNumero"></p>
+                <p>NIB</p>
+                <p id="nib"></p>
+                <p>IBAN</p>
+                <p id="iban"></p>
+                <p>Saldo</p>
+                <p id="saldo"></p>
+                <p>MBWay</p>
+                <p id="mbWay"></p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/assets/funcoesBasicas.js" defer></script>
+    <script type="module" src="/assets/menuLevantamentos.js" defer></script>
+    <script type="module" src="/assets/menuDepositos.js" defer></script>
+    <script type="module" src="/assets/menuMbWay.js" defer></script>
+    <script type="module" src="/assets/menuConsultas.js" defer></script>
+    <script type="module" src="/assets/menuVouchers.js" defer></script>
+    <script type="module" src="/assets/menuConta.js" defer></script>
+</body>
+
+</html>
